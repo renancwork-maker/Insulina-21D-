@@ -1,0 +1,131 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/jornada",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/jornada/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/oferta",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/oferta/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/clube",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/clube/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/perfil",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/perfil/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/presentes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/presentes/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/premium",
+      "destination": "/premium/index.html"
+    },
+    {
+      "source": "/premium/",
+      "destination": "/premium/index.html"
+    },
+    {
+      "source": "/dias",
+      "destination": "/dias/index.html"
+    },
+    {
+      "source": "/dias/",
+      "destination": "/dias/index.html"
+    },
+    {
+      "source": "/materiais",
+      "destination": "/materiais/indisponivel.html"
+    },
+    {
+      "source": "/materiais/:path*",
+      "destination": "/materiais/indisponivel.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/js/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/css/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/premium/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/api/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    }
+  ]
+}
