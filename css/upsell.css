@@ -18,3 +18,27 @@ h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(32px,5.5vw,55px);
 @keyframes appear{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:660px){.page-container{padding:0 17px}.mini-header{padding:13px 0}.header-note{display:none}.hero{padding:32px 0 23px}.eyebrow{font-size:10px;letter-spacing:.1em;margin-bottom:14px}h1{font-size:34px;line-height:1.17}.lead{font-size:14px;line-height:1.55;margin:15px auto 16px}.watch-instruction{font-size:12px}.video-tag{font-size:10px;border-radius:12px 12px 0 0}.video-shell{border-width:3px;border-top:0;border-radius:0 0 12px 12px}.video-footnote{font-size:11px}.pending-note{margin:24px 0 32px;padding:14px}.offer-reveal{margin-top:30px}.offer-top{padding:28px 22px 25px}.offer-top h2{font-size:31px}.benefits{grid-template-columns:1fr}.benefit{padding:12px 14px}.benefit strong{font-size:13px}.benefit div span{font-size:12px}.purchase-panel{padding:28px 18px 32px}.price{font-size:60px}.purchase-button{font-size:13px;gap:9px;min-height:58px;padding:10px}.small-assurances{font-size:11px}.footer{display:block;text-align:center}.footer span{display:block;margin:0 0 6px}}
 @media(prefers-reduced-motion:reduce){.offer-reveal{animation:none}.purchase-button{transition:none}html{scroll-behavior:auto}}
+
+/* Layout compacto: o vídeo é o elemento central da página. */
+.page-container{max-width:900px}
+.mini-header{padding:12px 0 11px;font-size:11px;border-bottom-color:#e7ddca}
+.seal{width:25px;height:25px;font-size:17px}
+.hero{padding:22px 6px 20px}
+.hero h1{font-size:clamp(29px,4.6vw,41px);line-height:1.17;letter-spacing:-.03em;max-width:665px}
+.hero .lead{font-size:14px;line-height:1.4;margin:10px auto 0;color:#4d6055}
+.video-section{max-width:850px}
+.video-tag{padding:9px 12px;font-size:11px;letter-spacing:.14em;border-radius:13px 13px 0 0}
+.video-shell{border-width:3px;border-top:0;box-shadow:0 18px 44px rgba(14,45,33,.21)}
+.offer-reveal{margin-top:28px}
+.footer{margin-top:25px}
+@media(max-width:660px){
+  .page-container{padding:0 12px}
+  .mini-header{padding:10px 4px;font-size:10px;gap:8px}
+  .seal{width:23px;height:23px;font-size:16px}
+  .hero{padding:19px 3px 17px}
+  .hero h1{font-size:clamp(26px,7vw,30px);line-height:1.13;max-width:365px}
+  .hero .lead{font-size:12.5px;margin:8px auto 0;line-height:1.35}
+  .video-tag{padding:9px 10px;font-size:10px;letter-spacing:.11em}
+  .video-shell{border-width:2px;border-top:0;border-radius:0 0 11px 11px}
+  .footer{margin-top:21px;font-size:10px}
+}
